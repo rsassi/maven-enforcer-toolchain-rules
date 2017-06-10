@@ -151,7 +151,7 @@ public class RuleJavaVersionToolchainAware extends AbstractToolChainAwareRule {
 	        + detectedJdkVersion.getMinorVersion() + " Incremental: " + detectedJdkVersion.getIncrementalVersion()
 	        + " Build: " + detectedJdkVersion.getBuildNumber() + "Qualifier: " + detectedJdkVersion.getQualifier() );
 	
-	    log.debug("Rule requires: " + version);
+	    log.debug("Rule requires: " + getVersion());
 	    enforceVersion( log, "JDK", getVersion(), detectedJdkVersion );
     } 
 
